@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="A quiz app about how much you know about your food">
+    <title>Thinkful Quiz App</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+
+    <header role="banner">
+        <h1>What the food?</h1>
+    </header>
+
+    <main role="main">
+
+        <section role="region" class="start-quiz">
+            <p>Think you know everything about food? Prove it!</p>
+            <button role="button" id="startQuizButton">Start Quiz</button>
+        </section>
+
+        <section role="region" class="quiz-section">
+            <h2 id="currentQuestion">This vegetable was originally purple instead of the hue we know it to be today:</h2>
+            <div id="quizQuestionAnswers">
+                <!--
+<input class="option" type="radio" value="0" name="option"> Tomato
+<br>
+<input class="option" type="radio" value="1" name="option"> Carrot
+<br>
+<input class="option" type="radio" value="2" name="option"> Bell Pepper
+<br>
+<input class="option" type="radio" value="3" name="option"> Cucumber
+<br>
+-->
+            </div>
+            <p id="questionTotal">Question 1/10</p>
+            <p id="questionNumberCorrect">You answered 3 out of 5 questions correctly!</p>
+        </section>
+
+        <section role="region" class="results-page">
+            <h2 id="quizFinalTotal">You scored 10 out of 10 correctly!</h2>
+            <p id="howYouDid"></p>
+            <div id="result-msg">
+                <!--
+<h3 class="correctQuestion">This vegetable was originally purple instead of the color we know it to be today</h3>
+<h4 class="correctAnswer">The correct answer is ... because .....</h4>
+<h3 class="correctQuestion">This vegetable was originally purple instead of the hue we know it to be today</h3>
+<h4 class="correctAnswer">The correct answer is ... because .....</h4>
+-->
+            </div>
+            <button role="button" id="retryButton">Take it again!</button>
+        </section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
